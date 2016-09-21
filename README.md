@@ -18,6 +18,6 @@ Els resultats del git creats es podràn trobar [aqui](https://github.com/Slagtan
 
 *En aquesta assignatura podrem fer servir hardware com aquest*
 
-![GTX 1080](/home/users/inf/hism1/ism47797439/Documents/M01-2016-2017/Downloads/geforcegtx1080.png "Geforce GTX 1080") 
+![GTX 1080](Downloads/geforcegtx1080.png "Geforce GTX 1080") 
 
     Exemple de bloc de còdi 
