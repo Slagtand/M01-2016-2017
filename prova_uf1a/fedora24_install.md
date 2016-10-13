@@ -9,4 +9,4 @@
 5. Escollir del nostre ordinador la imatge ***ISO*** descarregada i triar el tipus i versió de sistema operatiu.
 6. Triar la quantitat de memòria **RAM** i **CPUs** per a la màquina virtual.
 7. Indicar la capacitat del disc dur que tindrà la nostra màquina virtual.
-8. Finalitzar la creació de la màquina virtual i iniciar la instal.lació del sistema operatiu.
+8. Finalitzar la creació de la màquina virtual i iniciar la instal·lació del sistema operatiu.
