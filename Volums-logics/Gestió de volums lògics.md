@@ -17,3 +17,5 @@ Els volums lògics són com uns discs durs virtuals a partir del disc dur físic
 * ***lvcreate -L +50M -n videos /dev/multimedia***  
 * ***lvs (mostra els VL existents)***
 ---
+## Entorn de pràctiques: Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)
+> Per a aquesta pràctica farem servir una virtualització de Fedora 24 amb 3 discs VirtiO de 200 M cadascún, en un equip host Fedora 24.
