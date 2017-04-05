@@ -14,4 +14,6 @@ vgs (mostra els VG existents)
 ---
 * LV: Logical Volume ~ Particions. Particions creades a partir del VG anterior. El seu tamany es pot modificar sempre i quan no superi el del VG. El següent còdig mostra com fer-ho, indicant el volum que li donem i el nom.
 ---
-lvcreate -L +50M -n videos /dev/multimedia
+lvcreate -L +50M -n videos /dev/multimedia  
+lvs (mostra els VL existents)
+---
