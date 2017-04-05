@@ -33,3 +33,4 @@ Per a crear un volum lògic del total, primer identificarem un dels discs (PV), 
 ---
 ***lvcreate -l 100%FREE -n dades /dev/practica1***
 ---
+![Sin_titulo](ImgM01/Captura_practica_1_M01.png)
