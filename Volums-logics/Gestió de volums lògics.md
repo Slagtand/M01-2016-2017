@@ -37,3 +37,50 @@ Per a crear un volum lògic del total, primer identificarem un dels discs (PV), 
 ---  
 ![Sin_titulo](ImgM01/Captura_practica_1_M01.png)
 ---
+## Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.  
+1. Li assignarem un sistema de fitxers xfs al VL creat en la pràctica anterior amb la següent comanda:  
+---
+`mkfs.xfs /dev/practica1/dades`
+---  
+2. La montem a /mnt amb la comanda "mount":  
+---
+`mount /dev/practica1/dades /mnt`
+---  
+3. Creem el fitxer de 180 MB dintre del directori on ho volguem crear, en aquest cas /mnt:  
+---
+`dd if=/dev/zero of=test.img bs=1K count=180000`
+---  
+4. Comprovem que s'ha creat amb df -h :  
+---
+---  
+## Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple)
+1. Creem el raid 1 amb la següent comanda fent servirs els altres dos discs que teniem:  
+--- 
+`mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/vdb /dev/vdc`
+---  
+## Pràctica 4: Ampliació del volum lògic de dades al raid  
+1. Primer identifiquem el raid per a poguer-lo afegir al volum del grup:  
+---
+`pvcreate /dev/md0`
+---  
+2. L'afegim al volum del grup existent, és a dir, a practica1:  
+---
+`vgextend practica1 /dev/md0`
+---  
+3. Un cop fet això, ampliem el tamany del volum lògic dades:  
+---
+`lvextend -l +100%FREE /dev/practica1/dades`
+--- 
+## Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.  
+1. Augmentem el tamany del sistema de fitxers xfs al volum actual del LV:  
+---
+xfs_growfs /dev/practica1/dades
+---  
+2. Creem un altre arxiu anomenat "test2" de 180 MB com abans:  
+---
+`dd if=/dev/zero of=test2.img bs=1K count=180000`
+---
+3. Comprovem que s'ha creat correctament i augmenta el tamany ocupat:  
+---
+" "
+---  
