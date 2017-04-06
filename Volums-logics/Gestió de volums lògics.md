@@ -19,6 +19,7 @@ Els volums lògics són com uns discs durs virtuals a partir del disc dur físic
 ---
 ## Entorn de pràctiques: Explicar com farem la pràctica detalladament (màquina virtual i afegir tres discs de 200M)  
 > Per a aquesta pràctica farem servir una virtualització de Fedora 24 amb 3 discs VirtiO de 200 M cadascún, en un equip host Fedora 24.  
+> ***NOTA: Les següents comandes s'han de fer com a root.***
 ## Pràctica 1: Creació d'un volum lògic a partir d'un dels tres discs durs (vda per exemple). Aquest volum lògic ha de ser del total de capacitat del disc. El volum de grup s'ha de dir practica1 i el volum lògic dades.  
 Per a crear un volum lògic del total, primer identificarem un dels discs (PV), farem un grup amb aquest PV i crearem un LV amb el total de l'espai existent.
 1. Seleccionem el disc dessitjat, en aquest cas /dev/vda :  
