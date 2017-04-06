@@ -37,6 +37,7 @@ Per a crear un volum lògic del total, primer identificarem un dels discs (PV), 
 ---  
 ![Sin_titulo](ImgM01/Captura_practica_1_M01.png)
 ---
+
 ## Pràctica 2: Creació d'un sistema de fitxers xfs al volum lògic creat i muntatge a /mnt. També s'ha de crear un fitxer amb dd de 180MB.  
 1. Li assignarem un sistema de fitxers xfs al VL creat en la pràctica anterior amb la següent comanda:  
 ---
@@ -45,19 +46,24 @@ Per a crear un volum lògic del total, primer identificarem un dels discs (PV), 
 2. La montem a /mnt amb la comanda "mount":  
 ---
 `mount /dev/practica1/dades /mnt`
+![Sin titulo](ImgM01/Capturapractica2.png)
 ---  
 3. Creem el fitxer de 180 MB dintre del directori on ho volguem crear, en aquest cas /mnt:  
 ---
 `dd if=/dev/zero of=test.img bs=1K count=180000`
+![Sin titulo](ImgM01/Captura2Practica2.png)
 ---  
 4. Comprovem que s'ha creat amb df -h :  
 ---
+![Sin titulo](ImgM01/Captura3Practica2.png)
 ---  
+
 ## Pràctica 3: Creació d'un RAID 1 als dos discos sobrants (vdb i vdc per exemple)
 1. Creem el raid 1 amb la següent comanda fent servirs els altres dos discs que teniem:  
 --- 
 `mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/vdb /dev/vdc`
 ---  
+
 ## Pràctica 4: Ampliació del volum lògic de dades al raid  
 1. Primer identifiquem el raid per a poguer-lo afegir al volum del grup:  
 ---
@@ -71,10 +77,16 @@ Per a crear un volum lògic del total, primer identificarem un dels discs (PV), 
 ---
 `lvextend -l +100%FREE /dev/practica1/dades`
 --- 
+4. Comprovem que s'ha fet correctament:  
+---
+![Sin titulo](ImgM01/capturapractica4.png)
+---
+
 ## Pràctica 5: Ampliació del sistema de fitxers xfs al tamany actual del volum lògic dades (s'ha de poder fer sense desmuntar-lo de /mnt ja que és xfs). Una vegada creat crearem un nou fitxer de 180M.  
 1. Augmentem el tamany del sistema de fitxers xfs al volum actual del LV:  
 ---
-xfs_growfs /dev/practica1/dades
+`xfs_growfs /dev/practica1/dades`
+![Sin titulo](ImgM01/CapturaPRactica5.png)
 ---  
 2. Creem un altre arxiu anomenat "test2" de 180 MB com abans:  
 ---
@@ -82,5 +94,5 @@ xfs_growfs /dev/practica1/dades
 ---
 3. Comprovem que s'ha creat correctament i augmenta el tamany ocupat:  
 ---
-" "
+![Sin titulo](ImgM01/Captura3practica5.png)
 ---  
