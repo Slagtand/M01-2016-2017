@@ -27,10 +27,10 @@ Per a crear un volum lògic del total, primer identificarem un dels discs (PV), 
 ---
 2. Creem el VG anomenat "practica1" :
 ---
-***vgcreate practica1 /dev/vda***
+`vgcreate practica1 /dev/vda`
 ---
 3. Creem el volum lògic anomenat "dades" :
 ---
-***lvcreate -l 100%FREE -n dades /dev/practica1***
+`lvcreate -l 100%FREE -n dades /dev/practica1`
 ---
 ![Sin_titulo](ImgM01/Captura_practica_1_M01.png)
