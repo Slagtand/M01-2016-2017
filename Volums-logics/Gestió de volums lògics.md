@@ -23,7 +23,7 @@ Els volums lògics són com uns discs durs virtuals a partir del disc dur físic
 Per a crear un volum lògic del total, primer identificarem un dels discs (PV), farem un grup amb aquest PV i crearem un LV amb el total de l'espai existent.
 1. Seleccionem el disc dessitjat, en aquest cas /dev/vda :
 ---
-***pvcreate /dev/vda***  
+```pvcreate /dev/vda```  
 ---
 2. Creem el VG anomenat "practica1" :
 ---
