@@ -58,7 +58,19 @@
 1. Reinstalem la bios del fabricant.
 * ## Disco duro con error SMART: Error POST. Hard drive SMART error. Permite omitir el error.
 1. 
-* ## Pantalla rota/cable roto: Arranca con normalidad.
-* ## USB del frontal cruzado: Puede quemar la placa. Puede quemar los pendrive.
-* ## USB del frontal conectado mal en placa (otro conector que no es USB): Quema los pendrive (sobrevoltaje).
-* ## Pila de la BIOS esgotada
+* ## Pantalla rota/cable roto: Arranca con normalidad:
+1. La màquina arrenca però la pantalla no s'encèn/dona senyal. 
+2. Mirem que el cable de corrent estigui bé probant-lo amb una altre pantalla.
+  1. Si el cable està correcte i la pantalla segueix sense encendres és que la pantalla està trencada.
+3. Si el cable és el que falla, el canviem per un altre.
+* ## USB del frontal cruzado: Puede quemar la placa. Puede quemar los pendrive:
+1. Al introduir l'USB comprovem que la màquina no el detecta.
+2. Obrim la caixa i comprovem que tots els cables estiguin ben connectats.
+3. Ens adonem compte de que el cable que connecta amb l'USB frontal està creuat.
+* ## USB del frontal conectado mal en placa (otro conector que no es USB): Quema los pendrive (sobrevoltaje):
+1. Al introduir l'USB comprovem que la màquina no el detecta.
+2. Obrim la caixa i comprovem que tots els cables estiguin ben connectats.
+3. Ens donem compte de que el cable que connecta amb l'USB frontal està a un altre connector que no és el d'USB.
+* ## Pila de la BIOS esgotada:
+1. Quan reiniciem la màquina, veiem que l'hora ni la data és la que hauria de ser.
+2. Entrem a la BIOS per canviar-ho però al sortir no ens ha guardat els canvis.
