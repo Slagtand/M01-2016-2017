@@ -32,8 +32,8 @@
 2. No dòna senyal de vídeo. canviem els cables i comprovem la pantalla, tot funciona.
 3. Canviem la gràfica i funciona tot bé.
 * ## CPU rota/ no hay CPU/chipset roto:
-1. La màquina no s'encen i emet uns tons.
-2. Comprovem al manual del fabricant el codi de l'error.
+1. La màquina no s'encen.
+2. Obrim la caixa per veure si la cpu està bé.
 * ## Placa rota:
 1. La màquina directament no s'encèn. Comprovem que la font funciona bé.
 * ## Placa medio rota:
