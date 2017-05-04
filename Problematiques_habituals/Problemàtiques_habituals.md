@@ -1,6 +1,6 @@
 * ## Botón power on roto:
 1. No respon el botó de power.
-2. comprovem que la font no té el botó d'alimentació tancat.
+2. Comprovem que la font no té el botó d'alimentació tancat.
 3. Amb un tester comprovem que la font funciona correctament, la provem en un altre ordinador i funciona.
 4. Arribem a la conclusió de que és el botó de power el que està trencat.
 * ## Botón power on se queda clavado en ON:
