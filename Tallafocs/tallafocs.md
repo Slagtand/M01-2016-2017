@@ -27,10 +27,10 @@
     6. Nivell d'enllaç de dades
     7. Nivell físic
 4. Quines capes té el model TCP/IP? En aquest cas feu una breu descripció de les funcionalitats de cada capa.
-  1. Capa d'aplicació: Similar a les capes de sessió, presentacío i aplicació del model OSI.
-  2. Capa de transport: Similar a la capa de transport del model OSI.
-  3. Capa d'internet: Similar a la capa de xarxa del model OSI.
-  4. Capa d'accés al medi: Similar a la capa d'enllaç de dades i capa física del model OSI.  
+   1. Capa d'aplicació: Similar a les capes de sessió, presentacío i aplicació del model OSI.
+   2. Capa de transport: Similar a la capa de transport del model OSI.
+   3. Capa d'internet: Similar a la capa de xarxa del model OSI.
+   4. Capa d'accés al medi: Similar a la capa d'enllaç de dades i capa física del model OSI.  
 5. A quina capa/capes sol treballar tradicionalment un tallafocs?
   * Del model TCP/IP sol treballa amb la capa de transport i aplicació.
 
